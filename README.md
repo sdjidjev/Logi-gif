@@ -1,9 +1,10 @@
 Logi-gif
 ========
 
-It loads and displays gifs in Logisim. Uses Logisim and Python, as well as the OpenCV and Convert library.
+Logi-gif loads and displays gifs in Logisim. Uses Logisim and Python, as well as the OpenCV and Convert library.
 
-<p>Use for 64x64 gif:</p>
+## For 64x64 gifs:
+<p><code>convert image-name.gif -coalesce image-name.gif</code></p>
 <p><code>convert image-name.gif -colorspace Gray -trim +repage -resize 64x64\! image-name_resized.gif</code></p>
 <p><code>convert image-name_resized.gif image-name_resized_%d.png</code></p>
 <p>Go into images6464.py and change new_filename to image-name</p>

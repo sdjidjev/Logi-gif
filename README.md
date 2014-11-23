@@ -8,6 +8,6 @@ It loads and displays gifs in Logisim. Uses Logisim and Python, as well as the O
 <p><code>convert image-name_resized.gif image-name_resized_%d.png</code></p>
 <p>Go into images6464.py and change new_filename to image-name</p>
 <p>run <code>python images6464.py</code></p>
-<p>take image-name_1.txt image-name_2.txt image-name_3.txt image-name_4.txt and load it into logisim-img-64x64vfinal.circ into data 1, data 2, data 3, and data 4 respectively.</p>
+<p>take image-name_1.txt image-name_2.txt image-name_3.txt image-name_4.txt and load it into logisim-img-64x64vfinal.circ into the data 1, data 2, data 3, and data 4 RAMs (respectively).</p>
 <p>Do Command+K to run the gif.</p>
 

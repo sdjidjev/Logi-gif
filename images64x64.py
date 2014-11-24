@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import os
 
-new_filename = "dino"
+new_filename = "horse"
 f1 = open(new_filename+'_1.txt', 'w')
 f2 = open(new_filename+'_2.txt', 'w')
 f3 = open(new_filename+'_3.txt', 'w')
@@ -75,8 +75,8 @@ while frames_written < 4096:
     for j in range(0,num_frames):
         if frames_written >= 4096:
             break
-        write_image(new_filename+"_resized_"+str(j)+".png",2,frames_written, j, num_frames)
-        frames_written += 64
+        write_image(new_filename+"_resized_"+str(j)+".png",1,frames_written, j, num_frames)
+        frames_written += 32
 
 f1.close()
 f2.close()

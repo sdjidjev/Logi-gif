@@ -10,7 +10,7 @@ f.write("v2.0 raw\n")
 one_loop = 5
 frequency = (4096.0/32.0) # number frames allowed
 
-def write_image(filename, frames, frames_written, num,num_frames):
+def write_image(filename, frames, frames_written, num, num_frames):
 	im = cv2.imread(filename)
 	imgray = cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
 	hex_imgray = []

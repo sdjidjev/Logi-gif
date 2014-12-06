@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import os
 
-new_filename = "horse"
+new_filename = raw_input('Enter file name: ')
 f1 = open(new_filename+'_1.txt', 'w')
 f2 = open(new_filename+'_2.txt', 'w')
 f3 = open(new_filename+'_3.txt', 'w')

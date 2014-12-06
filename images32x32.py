@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import os
 
-new_filename = 'loading' # enter filename of gif
+new_filename = raw_input('Enter file name: ')
 frame_time = 0.01 # time (in seconds) for each frame
 max_frames = 4096
 f = open(new_filename+'.txt', 'w')

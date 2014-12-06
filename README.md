@@ -3,6 +3,7 @@ Logi-gif
 
 Logi-gif loads and displays gifs in Logisim. Uses Logisim and Python, as well as the OpenCV and Convert library.
 
+Before loading a new gif, do Command+R.
 ## To make 64x64 gifs:
 <p><code>convert [gif-name].gif -coalesce [gif-name].gif</code></p>
 <p><code>convert [gif-name].gif -colorspace Gray -resize 64x64\! [gif-name]_resized.gif</code></p>

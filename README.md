@@ -22,3 +22,6 @@ Before loading a new gif, do Command+R, and make sure the gif is in the same dir
 <p>Take [gif-name].txt load it into logisim-img-32x32.circ into the data RAM.</p>
 <p>Do Command+K to run the gif.</p>
 
+## Demo
+[![Logi-gif Demo](http://img.youtube.com/vi/5OTRVfKFdp4/0.jpg)](http://www.youtube.com/watch?v=5OTRVfKFdp4)
+

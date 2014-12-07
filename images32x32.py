@@ -8,7 +8,7 @@ max_frames = 4096
 f = open(new_filename+'.txt', 'w')
 f.write("v2.0 raw\n")
 one_loop = 5
-frequency = (4096.0/32.0) # number frames allowed
+frequency = (2048.0/32.0) # number frames allowed
 
 def write_image(filename, frames, frames_written, num, num_frames):
 	im = cv2.imread(filename)
@@ -25,21 +25,18 @@ def write_image(filename, frames, frames_written, num, num_frames):
 		hex_imgray.append(hex(int(string, 2))[2:]+"\n")
 	for frame in range(0,frames):
 		for hex_val in hex_imgray:
-			f.write(hex_val)
-	if num == num_frames-1 and frames_written < 4096:
-		while(frames_written<4096-32):
-			for hex_val in hex_imgray:
-				f.write(hex_val)
-			frames_written += 32
+			f.write(hex_val)		
 
 num_frames = 0
 while(os.path.isfile(new_filename+"_resized_"+str(num_frames)+".png")):
 	num_frames += 1
 frames_written = 0
-for j in range(0,num_frames):
-	write_image(new_filename+"_resized_"+str(j)+".png",int((float(frequency)/float(num_frames))),frames_written, j,num_frames)
-	print frames_written
-	frames_written += int((float(frequency)/float(num_frames)))*32
+
+while(frames_written<4096-32*num_frames):
+	for j in range(0,num_frames):
+		write_image(new_filename+"_resized_"+str(j)+".png",1,frames_written, j,num_frames)
+		print frames_written
+		frames_written += 32
 
 f.close()
 

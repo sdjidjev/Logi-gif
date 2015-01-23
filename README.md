@@ -1,7 +1,7 @@
 Logi-gif
 ========
 
-Logi-gif loads and displays gifs in Logisim. Uses Logisim and Python, as well as the OpenCV and Convert library. <b>DISCLAIMER: </b> Some gifs work better than others.
+Logi-gif loads and displays gifs in Logisim. Uses Logisim and Python, as well as the OpenCV and ImageMagick library (installed with brew on Mac OS X). <b>DISCLAIMER: </b> Some gifs work better than others.
 
 Before loading a new gif, do Command+R, and make sure the gif is in the same directory as the python scripts.
 ## To make 64x64 gifs:
